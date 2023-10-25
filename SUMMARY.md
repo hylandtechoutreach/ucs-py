@@ -4,3 +4,5 @@
   - [Warm-Up](CommandLine/WarmUpStory.md)
   - [Code-Along](CommandLine/CodeAlongStoryScript.md)
   - [More Commands](CommandLine/MoreCommands.md)
+- [3/14: Input/Output](InputOutput/StudentDesc.md)
+  - [Code-Along](InputOutput/CodeAlongDivination.md)
