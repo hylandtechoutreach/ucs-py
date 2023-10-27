@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --main-bg: #004;
+  --main-text: #7f7;
+  --accent: #ffd;
+
+  --accent-darker: color-mix(in lch, var(--accent) 90%, #000);
+  --main-bg-darker: color-mix(in lch, var(--main-bg) 90%, #000);
+  --main-bg-lighter: color-mix(in lch, var(--main-bg) 90%, #fff);
+
+  font-size: 70%;
+}
+
+.book-summary {
+  width: 400px;
+  left: -400px;
+  max-width: calc(100vw - 60px);
+}
+
+.navigation {
+    display: none;
+}
+
+.book-body {
+    background: inherit;
+}
+
+* {
+    background: var(--main-bg);
+    color: var(--main-text);
+    font-family: 'Inter', sans-serif;
+}
+
+strong {
+  background: inherit;
+}
+
+em {
+  color: inherit;
+}
+
+.markdown-section code {
+    background: black;
+    border-radius: 15%;
+    color: white;
+    font-family: consolas;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+    margin-bottom: 0px;
+    font-family: 'Space Mono', monospace;
+}
+
+.markdown-section h2 {
+    border-bottom: 2px solid var(--main-text);
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.markdown-section a,
+.markdown-section a strong,
+.markdown-section a:visited {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.book-summary ul.summary li a {
+    color: var(--accent);
+    font-size: 1.4em;
+}
+
+.book-summary ul.summary li.active > a {
+    color: white;
+}
+
+.book-summary,
+.book-summary ul.summary,
+.book-summary ul.summary li,
+.book-summary ul.summary li ul {
+    background: var(--main-bg-darker);
+}
+
+.font-settings {
+    display: none;
+}
+
+#book-search-input {
+    background: black;
+}
+
+#book-search-input input::placeholder {
+    color: white;
+}
+
+.markdown-section blockquote {
+    border-left: 4px solid var(--main-text);
+    background: var(--main-bg-darker);
+    padding: 5px 20px;
+}
+
+.markdown-section blockquote p {
+    color: var(--accent);
+    background: var(--main-bg-darker);
+    font-style: italic;
+}
+
+.markdown-section strong {
+    font-size: 1.1em;
+}
+
+.markdown-section table {
+  width: auto;
+}
+
+.markdown-section tr {
+  border-color: var(--main-text);
+}
+
+.markdown-section td, .markdown-section th {
+  background: black;
+}
+
+.book-summary ul.summary li a.gitbook-link {
+    display: none;
+}
+
+.markdown-section pre, .markdown-section pre span {
+    background: black;
+}
+
+::-webkit-scrollbar {
+    width:10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(39, 5, 39, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(116, 38, 103, .5);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 64, 144, .75);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(219, 109, 199);
+}
+
+div#before-pixel-grid-table + table tbody td {
+    text-align: center;
+}
+
+div#before-pixel-grid-table + table tbody td:nth-child(1) {
+    background: green;
+}
+
+div#before-pixel-grid-table + table tbody td:nth-child(2) {
+    background: #292929;
+}
+
+div#before-pixel-grid-table + table tbody td:nth-child(3) {
+    background: #d8d815;
+}
+
+div#before-pixel-grid-table + table tbody td:nth-child(4) {
+    background: #2929c1;
+}
+
+div#before-pixel-grid-table + table {
+    max-width:400px;
+}
+
+@media (min-width: 600px) {
+  .book.with-summary .book-body {
+      left: 400px;
+  }
+}
+
+.page-inner {
+  max-width: 1000px;
+}
+
+p, li {
+  color: white;
+}
