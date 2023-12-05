@@ -6,3 +6,5 @@
   - [More Commands](CommandLine/MoreCommands.md)
 - [3/14: Input/Output](InputOutput/StudentDesc.md)
   - [Code-Along](InputOutput/CodeAlongDivination.md)
+- [3/21: Conditionals](Conditionals/StudentDesc.md)
+  - [Code-Along](Conditionals/CodeAlongChatbot.md)
