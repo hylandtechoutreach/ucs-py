@@ -21,7 +21,7 @@ Present the [Turtle PowerPoint](Turtle.pptx).
 Walk through the [code-along instructions](CodeAlongTurtle.md) with the students to build a simple turtle application.
 
 ### Challenges
-Students can follow [the instructions](Challenges.md) to modify their programs in some fun and challenging ways.
+Students can follow [the instructions](ChallengesTurtle.md) to modify their programs in some fun and challenging ways.
 
 ### Formative Assessment: Baamboozle
 Facilitate a [Baamboozle quiz game](https://www.baamboozle.com/game/1913848) covering the material from the lecture and code-along.
