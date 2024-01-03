@@ -10,10 +10,10 @@ Material for each lesson is linked below.
 | **March 7** | [Command Line](CommandLine/StudentDesc.md) |
 | **March 14** | [Input/Output](InputOutput/StudentDesc.md) |
 | **March 21** | [Conditionals](Conditionals/StudentDesc.md) |
-| **April 4** | [Variables](Variables/StudentDesc.md) |
-| **April 11** | [Turtle](Turtle/StudentDesc.md) |
-| **April 18** | [PyGame](PyGame/StudentDesc.md) |
-| **April 25** | [Processing](Processing/StudentDesc.md) |
+| **April 4** | [Turtle](Turtle/StudentDesc.md) |
+| **April 11** | [Loops](Loops/StudentDesc.md) |
+| **April 18** | [Functions](Functions/StudentDesc.md) |
+| **April 25** |  [Variables](Variables/StudentDesc.md) |
 | **May 2** | [Review](Review/StudentDesc.md) (OPTIONAL) |
 | **May 9** | [Final Project Work](FinalProjectWork/StudentDesc.md) |
 | **May 16** | [Final Project Presentations](FinalProjectPresentations/StudentDesc.md) |
