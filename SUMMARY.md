@@ -8,3 +8,6 @@
   - [Code-Along](InputOutput/CodeAlongDivination.md)
 - [3/21: Conditionals](Conditionals/StudentDesc.md)
   - [Code-Along](Conditionals/CodeAlongChatbot.md)
+- [4/4: Turtle](Turtle/StudentDesc.md)
+  - [Code-Along](Turtle/CodeAlongTurtle.md)
+  - [Challenges](Turtle/ChallengesTurtle.md)
