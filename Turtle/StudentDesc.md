@@ -9,3 +9,6 @@ This lesson introduces [turtle graphics](https://docs.python.org/3/library/turtl
 
 ## Code-Along: Turtle's Journey
 [Click here to access the code-along instructions.](CodeAlongTurtle.md)
+
+## Challenges
+[Click here for some turtle challenges.](ChallengesTurtle.md)
