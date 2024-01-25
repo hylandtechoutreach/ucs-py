@@ -63,10 +63,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Turtle/StudentDesc.html" />
+    <link rel="next" href="ChallengesLoops.html" />
     
     
-    <link rel="prev" href="StudentDesc.html" />
+    <link rel="prev" href="WarmUpLoops.html" />
     
 
     </head>
@@ -211,9 +211,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="StudentDesc.html">
+        <li class="chapter " data-level="1.5" data-path="../Conditionals/StudentDesc.html">
             
-                <a href="StudentDesc.html">
+                <a href="../Conditionals/StudentDesc.html">
             
                     
                     3/21: Conditionals
@@ -225,9 +225,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.5.1" data-path="CodeAlongChatbot.html">
+        <li class="chapter " data-level="1.5.1" data-path="../Conditionals/CodeAlongChatbot.html">
             
-                <a href="CodeAlongChatbot.html">
+                <a href="../Conditionals/CodeAlongChatbot.html">
             
                     
                     Code-Along
@@ -288,9 +288,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../Loops/StudentDesc.html">
+        <li class="chapter " data-level="1.7" data-path="StudentDesc.html">
             
-                <a href="../Loops/StudentDesc.html">
+                <a href="StudentDesc.html">
             
                     
                     4/11: Loops
@@ -302,9 +302,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../Loops/WarmUpLoops.html">
+        <li class="chapter " data-level="1.7.1" data-path="WarmUpLoops.html">
             
-                <a href="../Loops/WarmUpLoops.html">
+                <a href="WarmUpLoops.html">
             
                     
                     Warm-Up
@@ -315,9 +315,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../Loops/CodeAlongLoops.html">
+        <li class="chapter active" data-level="1.7.2" data-path="CodeAlongLoops.html">
             
-                <a href="../Loops/CodeAlongLoops.html">
+                <a href="CodeAlongLoops.html">
             
                     
                     Code-Along
@@ -328,9 +328,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="../Loops/ChallengesLoops.html">
+        <li class="chapter " data-level="1.7.3" data-path="ChallengesLoops.html">
             
-                <a href="../Loops/ChallengesLoops.html">
+                <a href="ChallengesLoops.html">
             
                     
                     Challenges
@@ -341,9 +341,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.4" data-path="../Loops/DebuggingLoops.html">
+        <li class="chapter " data-level="1.7.4" data-path="DebuggingLoops.html">
             
-                <a href="../Loops/DebuggingLoops.html">
+                <a href="DebuggingLoops.html">
             
                     
                     Debugging
@@ -404,141 +404,131 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="code-along-chatbot">Code-Along: Chatbot</h1>
-<p>In this activity, create a simple <a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank">chatbot</a> that can respond to some basic messages.</p>
-<p><a href="https://replit.com/@HylandOutreach/PythonBot" target="_blank"><strong>Click here to view the Repl project.</strong></a> Fork the project to begin.</p>
-<h2 id="part-one-prompt-for-message">Part One: Prompt For Message</h2>
-<p>The first thing to do is ask the user to input a message. This is possible by creating a new variable, and using <code>input</code>.</p>
+                                <h1 id="code-along-loopy-turtle">Code-Along: Loopy Turtle</h1>
+<p>This activity shows how you can use loops to create some very interesting Turtle patterns in Python.</p>
+<p><strong><a href="https://trinket.io/python/888146498f" target="_blank">Click here for the starter project.</a></strong></p>
+<h2 id="part-one-understanding-the-existing-code">Part One: Understanding the Existing Code</h2>
+<p>There is already quite a bit of code in the project. So far, it:</p>
+<ul>
+<li>Creates a turtle</li>
+<li>Sets up the screen</li>
+<li>Sets the turtle and background colors</li>
+<li>Moves the turtle without drawing (using <code>penup</code>)</li>
+<li>Starts a fill</li>
+<li>Draws a small triangle based on a loop that runs <code>2</code> times</li>
+</ul>
+<p>This code doesn&apos;t do much, but it lays the groundwork for something much more interesting.</p>
+<h2 id="part-two-updating-the-loop">Part Two: Updating the Loop</h2>
+<p>Fix the <code>for</code> loop code so that instead of drawing a triangle with width <code>40</code>, it draws a square with width <code>400</code>.</p>
 <ol>
-<li>Open the <strong>main.py</strong> file for editing</li>
-<li>Create a new variable named <code>message</code></li>
-<li>Set the <code>message</code> variable to an <code>input</code> function call</li>
-<li>Make the text for the prompt say <code>&quot;Please enter a message: &quot;</code></li>
+<li>Make the loop run <code>4</code> times instead of <code>2</code></li>
+<li>Make the turtle move forward <code>400</code> pixels instead of <code>40</code></li>
 </ol>
-<p>The added Python code should look something like this:</p>
-<pre><code class="lang-py">message = input(<span class="hljs-string">&quot;Please enter a message: &quot;</span>)
+<p>The updated <code>for</code> loop code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+  keisha.forward(<span class="hljs-number">400</span>)
+  keisha.right(<span class="hljs-number">90</span>)
 </code></pre>
-<p>Run the code, and verify that a prompt appears asking for a message. Nothing should happen when entering a message yet though!</p>
-<h2 id="part-two-responding-to-the-message">Part Two: Responding to the Message</h2>
-<p>Next, the chatbot should respond to certain messages the user enters. This is where <code>if</code> statements come in: the response should be different depending on the message.</p>
-<p>To start, have the chatbot respond to a message of &quot;Hi&quot; from the user.</p>
+<h2 id="part-three-a-new-pattern">Part Three: A New Pattern</h2>
+<p>Now there should be a nice blue square: a perfect canvas upon which to bestow a lovely geometric design. This will consist of a few different steps.</p>
+<h3 id="step-a-position-the-turtle">Step A: Position the Turtle</h3>
+<p>First, change the turtle&apos;s color and position it appropriately.</p>
 <ol>
-<li>Open the <strong>main.py</strong> file for editing</li>
-<li>Make a new line at the bottom of the file</li>
-<li>There, create an <code>if</code> statement with the <code>if</code> keyword</li>
-<li>For the <code>if</code> condition, check if the user said &quot;Hi&quot;<ul>
-<li>Use <code>message</code> variable, <code>==</code>, and <code>&quot;Hi&quot;</code> to compare</li>
+<li>Set the color to <code>white</code></li>
+<li>Pick up the pen</li>
+<li>Move to coordinates of <code>(0, -100)</code></li>
+<li>Put the pen back down</li>
+</ol>
+<p>After these commands, the turtle should be ready to draw. The code should look something like this:</p>
+<pre><code class="lang-py">keisha.color(<span class="hljs-string">&quot;white&quot;</span>)
+
+keisha.penup()
+keisha.goto(<span class="hljs-number">0</span>, <span class="hljs-number">-100</span>)
+keisha.pendown()
+</code></pre>
+<h3 id="step-b-setup-the-loop">Step B: Setup the Loop</h3>
+<p>Now it&apos;s time for a totally new loop. This should look a lot like the other loop, but it will do some different things. First, make a new line at the bottom of the <strong>main.py</strong> file. Then:</p>
+<ol>
+<li>Add the basic <code>for</code> loop structure code to loop <code>36</code> times<ul>
+<li><code>for</code></li>
+<li><code>x</code></li>
+<li><code>in</code></li>
+<li><code>range</code></li>
+<li>Parentheses <code>()</code></li>
+<li>Number <code>36</code></li>
+<li>Colon <code>:</code></li>
 </ul>
 </li>
-<li>Make a new line, and make sure it is <em>indented</em></li>
-<li>There, display a message saying &quot;Greetings, human&quot;<ul>
-<li>Use <code>print(&quot;Greetings, human&quot;)</code></li>
+<li>Make a new line</li>
+<li><em>Indent</em> the new line by hitting <code>Space</code> twice</li>
+<li>Make the turtle draw a circle with radius <code>40</code></li>
+</ol>
+<p>Once the new <code>for</code> loop is in place, run the project again. It should be looping... for now, it&apos;s just doing the same thing over and over again, but that&apos;s a good start.</p>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">36</span>):
+  keisha.circle(<span class="hljs-number">40</span>)
+</code></pre>
+<h3 id="step-c-move-forward">Step C: Move Forward</h3>
+<p>The next step is to move the turtle along with each time through the loop. This will layer each circle in an interesting way, instead of simply drawing all the circles right on top of each other.</p>
+<ol>
+<li>Make a new line at the bottom of the file</li>
+<li><em>Indent</em> the new line by hitting <code>Space</code> twice<ul>
+<li>Note: It should be at the same indentation level as the <code>keisha.circle</code> command</li>
 </ul>
 </li>
+<li>Move the turtle forward <code>20</code> pixels</li>
 </ol>
-<p>The added Python code should look something like this:</p>
-<pre><code class="lang-py"><span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;Hi&quot;</span>:
-  print(<span class="hljs-string">&quot;Greetings, human&quot;</span>)
+<p>Run the code again, and see how it gets a little more interesting! Now the turtle draws different circles veering off to the right.</p>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">36</span>):
+  keisha.circle(<span class="hljs-number">40</span>)
+  keisha.forward(<span class="hljs-number">20</span>)
 </code></pre>
-<p>Run the code. Enter &quot;Hi&quot; as the message, and verify that the proper response appears! If any other message is entered, no response should appear.</p>
-<h2 id="part-three-more-responses">Part Three: More Responses</h2>
-<p>The chatbot is functional, but it is not very powerful yet. It needs to be able to respond to some more messages! Add a couple more responses using <code>if</code> statements.</p>
-<table>
-<thead>
-<tr>
-<th>Message</th>
-<th>Response</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I love you</td>
-<td>Does not compute</td>
-</tr>
-<tr>
-<td>Can I have a hug?</td>
-<td>INITIATING HUG PROTOCOL &#x1F917;</td>
-</tr>
-</tbody>
-</table>
-<p>These <code>if</code> statements will look very similar to the previous <code>if</code> statement. For each of the responses, follow these steps:</p>
+<h3 id="step-d-complete-the-cycle">Step D: Complete the Cycle</h3>
+<p>It looks pretty cool, but what we really want is to make a donut. This will be possible by adding one more command to run every time through the loop.</p>
 <ol>
-<li>Have the <strong>main.py</strong> file open for editing</li>
 <li>Make a new line at the bottom of the file</li>
-<li>Add an <code>if</code> keyword</li>
-<li>For the condition after the <code>if</code>, check if <code>message ==</code> the given message</li>
-<li>In the body (indented on the next line), add the <code>print</code> with the response</li>
+<li><em>Indent</em> the new line by hitting <code>Space</code> twice<ul>
+<li>Note: It should be at the same indentation level as the <code>keisha.circle</code> command</li>
+</ul>
+</li>
+<li>Turn the turtle to the left <code>10</code> pixels</li>
 </ol>
-<p>The added Python code should look something like this:</p>
-<pre><code class="lang-py"><span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;I love you&quot;</span>:
-  print(<span class="hljs-string">&quot;Does not compute&quot;</span>)
+<p>Run the code again - now, the turtle should be making a pretty cool cyclical pattern.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>And that&apos;s it! The code at the end of the activity should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
 
-<span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;Can I have a hug?&quot;</span>:
-  print(<span class="hljs-string">&quot;INITIATING HUG PROTOCOL &#x1F917;&quot;</span>)
+keisha = Turtle()
+paper = keisha.getscreen()
+paper.setup(<span class="hljs-number">500</span>, <span class="hljs-number">500</span>)
+
+keisha.color(<span class="hljs-string">&quot;blue&quot;</span>)
+paper.bgcolor(<span class="hljs-string">&quot;white&quot;</span>)
+
+keisha.penup()
+keisha.goto(<span class="hljs-number">-200</span>, <span class="hljs-number">200</span>)
+keisha.pendown()
+
+keisha.begin_fill()
+
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+  keisha.forward(<span class="hljs-number">400</span>)
+  keisha.right(<span class="hljs-number">90</span>)
+
+keisha.end_fill()
+
+keisha.color(<span class="hljs-string">&quot;white&quot;</span>)
+
+keisha.penup()
+keisha.goto(<span class="hljs-number">0</span>, <span class="hljs-number">-100</span>)
+keisha.pendown()
+
+<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">36</span>):
+  keisha.circle(<span class="hljs-number">40</span>)
+  keisha.forward(<span class="hljs-number">20</span>)
+  keisha.left(<span class="hljs-number">10</span>)
 </code></pre>
-<p>Run the code, try out each of the messages. Make sure to enter them exactly right, with proper punctuation/capitalization/etc. Each message should produce the correct response!</p>
-<h2 id="final-code">Final Code</h2>
-<p>By the end of the activity, the code should look something like this:</p>
-<pre><code class="lang-py">print(<span class="hljs-string">&quot;Welcome to the chat &#x1F916;&quot;</span>)
-print()
-
-message = input(<span class="hljs-string">&quot;Please enter a message: &quot;</span>)
-
-<span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;Hi&quot;</span>:
-  print(<span class="hljs-string">&quot;Greetings, human&quot;</span>)
-
-<span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;I love you&quot;</span>:
-  print(<span class="hljs-string">&quot;Does not compute&quot;</span>)
-
-<span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;Can I have a hug?&quot;</span>:
-  print(<span class="hljs-string">&quot;INITIATING HUG PROTOCOL &#x1F917;&quot;</span>)
-</code></pre>
-<h2 id="next-steps">Next Steps</h2>
-<p>After the basic code-along activity has been completed, work on some of these additional features.</p>
-<h3 id="even-more-responses">Even More Responses</h3>
-<p>There is always room for more responses to be added to the chatbot! Come up with some original ones, or use this list as a basis. Each new response should use a similar <code>if</code> statement structure:</p>
-<pre><code class="lang-py"><span class="hljs-keyword">if</span> message == <span class="hljs-string">&quot;MESSAGE&quot;</span>:
-  print(<span class="hljs-string">&quot;RESPONSE&quot;</span>)
-</code></pre>
-<p>Add several responses to make the chatbot more lifelike.</p>
-<table>
-<thead>
-<tr>
-<th>Message</th>
-<th>Response</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>What&apos;s up?</td>
-<td>Nothing.</td>
-</tr>
-<tr>
-<td>How are you</td>
-<td>I am fine.</td>
-</tr>
-<tr>
-<td>Sing a song</td>
-<td>Mary had a little lamb &#x1F3B6;</td>
-</tr>
-<tr>
-<td>What is 1+1</td>
-<td>1+1 is 2.</td>
-</tr>
-<tr>
-<td>What is 1+2</td>
-<td>1+2 is 3.</td>
-</tr>
-<tr>
-<td>Tell me a joke</td>
-<td>I&apos;m against picketing, but I don&apos;t know how to show it.</td>
-</tr>
-<tr>
-<td>Give me a quote</td>
-<td>You miss 100% of the shots you take</td>
-</tr>
-</tbody>
-</table>
 
                                 
                                 </section>
@@ -566,12 +556,12 @@ message = input(<span class="hljs-string">&quot;Please enter a message: &quot;</
 
             
                 
-                <a href="StudentDesc.html" class="navigation navigation-prev " aria-label="Previous page: 3/21: Conditionals">
+                <a href="WarmUpLoops.html" class="navigation navigation-prev " aria-label="Previous page: Warm-Up">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Turtle/StudentDesc.html" class="navigation navigation-next " aria-label="Next page: 4/4: Turtle">
+                <a href="ChallengesLoops.html" class="navigation navigation-next " aria-label="Next page: Challenges">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -582,7 +572,7 @@ message = input(<span class="hljs-string">&quot;Please enter a message: &quot;</
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.5.1","depth":2,"next":{"title":"4/4: Turtle","level":"1.6","depth":1,"path":"Turtle/StudentDesc.md","ref":"Turtle/StudentDesc.md","articles":[{"title":"Code-Along","level":"1.6.1","depth":2,"path":"Turtle/CodeAlongTurtle.md","ref":"Turtle/CodeAlongTurtle.md","articles":[]},{"title":"Challenges","level":"1.6.2","depth":2,"path":"Turtle/ChallengesTurtle.md","ref":"Turtle/ChallengesTurtle.md","articles":[]}]},"previous":{"title":"3/21: Conditionals","level":"1.5","depth":1,"path":"Conditionals/StudentDesc.md","ref":"Conditionals/StudentDesc.md","articles":[{"title":"Code-Along","level":"1.5.1","depth":2,"path":"Conditionals/CodeAlongChatbot.md","ref":"Conditionals/CodeAlongChatbot.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Conditionals/CodeAlongChatbot.md","mtime":"2024-01-25T19:06:02.475Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-25T19:06:31.730Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.7.2","depth":2,"next":{"title":"Challenges","level":"1.7.3","depth":2,"path":"Loops/ChallengesLoops.md","ref":"Loops/ChallengesLoops.md","articles":[]},"previous":{"title":"Warm-Up","level":"1.7.1","depth":2,"path":"Loops/WarmUpLoops.md","ref":"Loops/WarmUpLoops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Loops/CodeAlongLoops.md","mtime":"2024-01-25T19:06:02.507Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-25T19:06:31.730Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
