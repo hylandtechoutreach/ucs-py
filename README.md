@@ -2,7 +2,7 @@
 This repository contains material for Hyland's Python Academy course at Urban Community School.
 
 ## Overview
-In this course, students will learn some basic programming concepts through an introduction to the Python programming language. They will not need any prior experience to participate in this academy, but the material will be more rigorous than the HTML/CSS content. Students will be expected to focus, learn, and retain knowledge.
+In the Hyland Python Academy, we will introduce a new language: Python. Python is a powerful programming language that is used for things like game development, artificial intelligence, and automation. You will apply some of the fundamental coding skills you’ve learned in our HTML/CSS and JavaScript academies, but this academy will go deeper into computer science concepts. Note that this material will be more rigorous than our HTML/CSS content; you will be expected to arrive with a desire to learn, and the ability to focus and retain knowledge.
 
 ## Learning Objectives
 By the end of the course, students will be able to:
