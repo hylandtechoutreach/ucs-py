@@ -11,3 +11,8 @@
 - [4/4: Turtle](Turtle/StudentDesc.md)
   - [Code-Along](Turtle/CodeAlongTurtle.md)
   - [Challenges](Turtle/ChallengesTurtle.md)
+- [4/11: Loops](Loops/StudentDesc.md)
+  - [Warm-Up](Loops/WarmUpLoops.md)
+  - [Code-Along](Loops/CodeAlongLoops.md)
+  - [Challenges](Loops/ChallengesLoops.md)
+  - [Debugging](Loops/DebuggingLoops.md)
