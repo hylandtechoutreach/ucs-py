@@ -16,3 +16,7 @@
   - [Code-Along](Loops/CodeAlongLoops.md)
   - [Challenges](Loops/ChallengesLoops.md)
   - [Debugging](Loops/DebuggingLoops.md)
+- [4/18: Functions](Functions/StudentDesc.md)
+  - [Worksheet](Functions/FunctionsWorksheet.md)
+  - [Code-Along](Functions/CodeAlongSkyFunctions.md)
+  - [Challenges](Functions/ChallengesSkyFunctions.md)
