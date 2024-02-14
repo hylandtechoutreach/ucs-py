@@ -35,6 +35,7 @@
 
 strong {
   background: inherit;
+  color: white;
 }
 
 em {
@@ -43,8 +44,11 @@ em {
 
 .markdown-section code {
     background: black;
-    border-radius: 15%;
     color: white;
+    font-family: consolas;
+}
+
+.markdown-section code span {
     font-family: consolas;
 }
 
@@ -65,6 +69,18 @@ em {
     padding-bottom: 5px;
     margin-bottom: 10px;
     background: rgba(0, 0, 0, .5);
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.markdown-section h2 span.expand-button {
+    background: inherit;
+    float: right;
+    margin-right: 20px;
+    font-size: .5em;
 }
 
 .markdown-section a,
@@ -72,6 +88,7 @@ em {
 .markdown-section a:visited {
     color: var(--accent);
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .book-summary ul.summary li a {
@@ -114,10 +131,6 @@ em {
     font-style: italic;
 }
 
-.markdown-section strong {
-    font-size: 1.1em;
-}
-
 .markdown-section table {
   width: auto;
 }
@@ -136,6 +149,7 @@ em {
 
 .markdown-section pre, .markdown-section pre span {
     background: black;
+    border-radius: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -195,4 +209,26 @@ div#before-pixel-grid-table + table {
 
 p, li {
   color: white;
+}
+
+span.expand-button {
+    transition: 300ms;
+}
+
+div.section-content {
+    overflow: hidden;
+    transition: max-height 300ms;
+}
+
+div.contracted > div.section-content {
+    max-height: 0px;
+    transition: max-height 500ms;
+}
+
+div.contracted > h2 > span.expand-button {
+    transform: rotate(180deg);
+}
+
+.body-inner {
+    scrollbar-gutter: stable;
 }
