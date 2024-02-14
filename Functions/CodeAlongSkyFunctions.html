@@ -490,7 +490,7 @@ plane.speed(<span class="hljs-number">10</span>)
 <p>The next section starts up a loop, that will run <code>10</code> total times:</p>
 <pre><code class="lang-py"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
 </code></pre>
-<p>Each time through the loop, it gets a random <code>size</code> value...</p>
+<p>Each time through the <code>for</code> loop, it gets a random <code>size</code> value...</p>
 <pre><code class="lang-py">  size = randint(<span class="hljs-number">150</span>, <span class="hljs-number">200</span>)
 </code></pre>
 <p>...moves the <code>plane</code> a random spot on the canvas...</p>
@@ -499,7 +499,7 @@ plane.speed(<span class="hljs-number">10</span>)
 <p>...and draws a cloud by calling the <code>draw_cloud</code> by passing in the <code>plane</code> and the random <code>size</code> value!</p>
 <pre><code class="lang-py">  draw_cloud(plane, size)
 </code></pre>
-<p>Finally, outside of the loop (once it has run <code>10</code> times), the program hides the <code>plane</code> by calling the <code>hideturtle</code> function:</p>
+<p>Finally, outside of the <code>for</code> loop (once it has run <code>10</code> times), the program hides the <code>plane</code> by calling the <code>hideturtle</code> function:</p>
 <pre><code class="lang-py">plane.hideturtle()
 </code></pre>
 <h3 id="the-funpy-file">The fun.py File</h3>
@@ -510,6 +510,7 @@ plane.speed(<span class="hljs-number">10</span>)
 <li><code>draw_star</code></li>
 <li><code>draw_cloud</code></li>
 </ul>
+<p>The details aren&apos;t too important right now, but know that each of these functions does what its name says.</p>
 <h3 id="current-behavior">Current Behavior</h3>
 <p>Right now, when the program runs, it makes a cyan sky, draws a yellow sun, and draws ten randomly-sized clouds in random places! Run the program a few times to see how it looks different each time.</p>
 <h2 id="part-two-night">Part Two: Night</h2>
@@ -521,13 +522,175 @@ plane.speed(<span class="hljs-number">10</span>)
 <p>Run the program again to make sure the sky turns black!</p>
 <h3 id="corner-color">Corner Color</h3>
 <p>The one thing about night is that the sun is <strong>NOT</strong> out at night. Right now, there&apos;s a big yellow quartercircle in the upper right. Change it from a sun to a moon!</p>
+<p>This happens in the <strong>fun.py</strong> file, so open that one. There, find the <code>draw_corner</code> function definition. On line <strong>6</strong>, the <code>fillcolor</code> is set to <code>&quot;yellow&quot;</code> - make it <code>&quot;white&quot;</code> instead. The code should look something like this:</p>
+<pre><code class="lang-py">  turtle.fillcolor(<span class="hljs-string">&quot;white&quot;</span>)
+</code></pre>
 <h4 id="side-note-a-more-sustainable-way">Side-Note: A More Sustainable Way</h4>
+<p>What if we wanted to draw a moon, but still be able to draw a sun? We could add a <em>parameter</em> as input that could change the color dynamically based on the function call!</p>
+<pre><code class="lang-py"><span class="hljs-comment"># define the function - with parameter</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw_corner</span><span class="hljs-params">(turtle, color)</span>:</span>
+  <span class="hljs-comment"># ...</span>
+  turtle.fillcolor(color)
+
+<span class="hljs-comment"># call the function - passing input</span>
+draw_corner(plane, <span class="hljs-string">&quot;white&quot;</span>)
+</code></pre>
+<p>This is not necessary for now, but it can make functions much more powerful.</p>
 <h3 id="shape-types">Shape Types</h3>
+<p>Sure, there are clouds at night. But to really set the night scene apart from the day, we can use a new type of shape: stars!</p>
+<ol>
+<li>Open the <strong>main.py</strong> file</li>
+<li>Find the <code>draw_cloud</code> function call within the <code>for</code> loop (line <strong>18</strong>)</li>
+<li>Change <code>draw_cloud</code> to <code>draw_star</code></li>
+</ol>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py">  draw_star(plane, size)
+</code></pre>
+<p>Run the program, and see the stars!</p>
 <h3 id="shape-sizes">Shape Sizes</h3>
+<p>Okay, so there are stars, but they don&apos;t really look like stars from the sky. They look kind of like spangled-banner type stars. Make them smaller so they look more like the twinkling celestial bodies we all know and love!</p>
+<ol>
+<li>In the <strong>main.py</strong> file, find the <code>for</code> loop</li>
+<li>There, find the <code>randint</code> function call (line <strong>16</strong>)</li>
+<li>Notice the numbers passed: <code>150</code> and <code>200</code>  <ul>
+<li>This means the <code>size</code> will be between 150 and 200 pixels</li>
+</ul>
+</li>
+<li>Update those numbers to be <code>15</code> and <code>20</code></li>
+</ol>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py">  size = randint(<span class="hljs-number">15</span>, <span class="hljs-number">20</span>)
+</code></pre>
+<p>Run the program, and see the shrunken stars!</p>
 <h3 id="shape-count">Shape Count</h3>
-<p><a href="https://trinket.io/python/a0f90bc908" target="_blank">https://trinket.io/python/a0f90bc908</a></p>
+<p>Now the stars themselves look pretty good, but they don&apos;t quite fill the sky. Update the code so that the <code>plane</code> turtle draws a lot more stars!</p>
+<ol>
+<li>In the <strong>main.py</strong> file, find the <code>for</code> loop</li>
+<li>Notice that it currently loops <code>10</code> times <ul>
+<li>This means there will be 10 stars</li>
+</ul>
+</li>
+<li>Update the number to be <code>50</code></li>
+</ol>
+<p>The code should look something like this:</p>
+<pre><code class="lang-py">  <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">50</span>):
+</code></pre>
+<p>Run the program, and by the end, the sky should be totally filled with stars!</p>
+<h3 id="code">Code</h3>
+<p>At this point, the code should look something like this:</p>
+<p><a href="https://trinket.io/python/a0f90bc908" target="_blank">Click here for the full night version of the project.</a></p>
 <h2 id="part-three-aliens">Part Three: Aliens</h2>
-<p><a href="https://trinket.io/python/17bc7a684c" target="_blank">https://trinket.io/python/17bc7a684c</a></p>
+<p>Okay, so it&apos;s nighttime now. But nighttime by itself isn&apos;t too exciting. Let&apos;s shake things up with an alien invasion.</p>
+<blockquote>
+<p><em>For our purposes, aliens will be green squares</em></p>
+</blockquote>
+<h3 id="defining-a-new-function">Defining a New Function</h3>
+<p>First, we need to tell Python how to draw an alien, just like we told it how to draw clouds and stars.</p>
+<ol>
+<li>Open the <strong>fun.py</strong> file</li>
+<li>Make a new line at the very bottom of the file</li>
+<li>There, define a function named <code>draw_alien</code> that takes in a <code>turtle</code> and a <code>size</code> as input <ul>
+<li><code>def</code> keyword</li>
+<li>Function name</li>
+<li>Parentheses</li>
+<li>Input</li>
+<li>Colon</li>
+</ul>
+</li>
+</ol>
+<p>The new line should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw_alien</span><span class="hljs-params">(turtle, size)</span>:</span>
+</code></pre>
+<h4 id="function-body-turtle-prep">Function Body: Turtle Prep</h4>
+<p>Now the function has been named, but it doesn&apos;t have any instructions yet! First, let&apos;s set up the turtle to draw an alien. We will put the pen down, and get it ready to draw green.</p>
+<ol>
+<li>Go onto the next line, and make sure it is <strong>indented</strong></li>
+<li>Put the <code>turtle</code>&apos;s pen down</li>
+<li>Set the <code>turtle</code>&apos;s color to <code>&quot;lime&quot;</code></li>
+<li>Set the <code>turtle</code>&apos;s fill color to <code>&quot;lime&quot;</code></li>
+<li>Start the <code>turtle</code>&apos;s fill</li>
+</ol>
+<p>The added code should look something like this:</p>
+<pre><code class="lang-py">  turtle.pendown()
+  turtle.color(<span class="hljs-string">&quot;lime&quot;</span>)
+  turtle.fillcolor(<span class="hljs-string">&quot;lime&quot;</span>)
+  turtle.begin_fill()
+</code></pre>
+<h4 id="function-body-square-drawing">Function Body: Square Drawing</h4>
+<p>Now the turtle is ready to draw! Next, make it draw a square.</p>
+<ol>
+<li>Go onto the next line, still <strong>indented</strong> within the <code>draw_alien</code> function body</li>
+<li>Create a new <code>for</code> loop to loop <code>4</code> times</li>
+<li>Go onto the next line, and make sure it is indented <strong>two levels</strong></li>
+<li>There, move the <code>turtle</code> forward based on the <code>size</code> of the shape</li>
+<li>Under that, turn the <code>turtle</code> left <code>90</code> degrees</li>
+</ol>
+<p>The added code should look something like this:</p>
+<pre><code class="lang-py">  <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    turtle.forward(size)
+    turtle.left(<span class="hljs-number">90</span>)
+</code></pre>
+<p>Make careful note of the indentation!</p>
+<h4 id="function-body-turtle-teardown">Function Body: Turtle Teardown</h4>
+<p>Now the shape has been drawn! All that&apos;s left is filling it in, and picking up the pen.</p>
+<ol>
+<li>Go onto the next line, and make sure it is only indented <strong>one level</strong> <ul>
+<li>Outside of the <code>for</code> loop body</li>
+</ul>
+</li>
+<li>There, end the <code>turtle</code>&apos;s fill</li>
+<li>Under that, pick up the <code>turtle</code>&apos;s pen</li>
+</ol>
+<p>The added code should look something like this:</p>
+<pre><code class="lang-py">  turtle.end_fill()
+  turtle.penup()
+</code></pre>
+<h4 id="full-function-definition">Full Function Definition</h4>
+<p>The whole function definition should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw_alien</span><span class="hljs-params">(turtle, size)</span>:</span>
+  turtle.pendown()
+  turtle.color(<span class="hljs-string">&quot;lime&quot;</span>)
+  turtle.fillcolor(<span class="hljs-string">&quot;lime&quot;</span>)
+  turtle.begin_fill()
+
+  <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">4</span>):
+    turtle.forward(size)
+    turtle.left(<span class="hljs-number">90</span>)
+
+  turtle.end_fill()
+  turtle.penup()
+</code></pre>
+<p>So the function has been <strong>defined</strong>, but running the program won&apos;t do anything different. We&apos;ve <em>taught</em> Python <em>how</em> to draw an alien, but we haven&apos;t <em>told</em> Python to draw an alien yet! We still need to <strong>call</strong> the function.</p>
+<h3 id="calling-the-new-function">Calling the New Function</h3>
+<p>We need to go back into the <strong>main.py</strong> file to change what our <code>plane</code> is actually doing.</p>
+<ol>
+<li>Open the <strong>main.py</strong> file</li>
+<li>Find the <code>for</code> loop</li>
+<li>In the body of the <code>for</code> loop, find where the <code>draw_star</code> function is called</li>
+<li>Change it to draw an alien instead of drawing a star!</li>
+</ol>
+<p>The updated code should look like this:</p>
+<pre><code class="lang-py">  draw_alien(plane, size)
+</code></pre>
+<p>Run the program to see what happens! There should be a bunch of little green aliens in the sky.</p>
+<h3 id="bigger-aliens">Bigger Aliens</h3>
+<p>The little aliens are nice, but we can make them bigger. We can also make fewer of them so they don&apos;t fill up too much of the sky.</p>
+<ol>
+<li>Find the <code>for</code> loop</li>
+<li>Make it run 15 times instead of 50</li>
+<li>In the body of the <code>for</code> loop, find the <code>size</code> line</li>
+<li>Make it between 40 and 60 instead of 15 and 20</li>
+</ol>
+<p>The code for the <code>for</code> loop should end up looking something like this: </p>
+<pre><code class="lang-py"><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(<span class="hljs-number">50</span>):
+  size = randint(<span class="hljs-number">15</span>, <span class="hljs-number">20</span>)
+  move_randomly(plane)
+  draw_alien(plane, size)
+</code></pre>
+<p>Run the program, and see the larger aliens invade!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By the end of this activity, the code should look something like this:</p>
+<p><a href="https://trinket.io/python/a209abcbb6" target="_blank">Click here for the Alien Invasion version of the project</a></p>
 
                                 
                                 </section>
@@ -571,7 +734,7 @@ plane.speed(<span class="hljs-number">10</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.8.2","depth":2,"next":{"title":"Challenges","level":"1.8.3","depth":2,"path":"Functions/ChallengesSkyFunctions.md","ref":"Functions/ChallengesSkyFunctions.md","articles":[]},"previous":{"title":"Worksheet","level":"1.8.1","depth":2,"path":"Functions/FunctionsWorksheet.md","ref":"Functions/FunctionsWorksheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Functions/CodeAlongSkyFunctions.md","mtime":"2024-02-13T21:00:06.071Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-13T21:00:35.487Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.8.2","depth":2,"next":{"title":"Challenges","level":"1.8.3","depth":2,"path":"Functions/ChallengesSkyFunctions.md","ref":"Functions/ChallengesSkyFunctions.md","articles":[]},"previous":{"title":"Worksheet","level":"1.8.1","depth":2,"path":"Functions/FunctionsWorksheet.md","ref":"Functions/FunctionsWorksheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Functions/CodeAlongSkyFunctions.md","mtime":"2024-02-14T15:14:42.761Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-14T15:15:12.044Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
