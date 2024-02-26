@@ -16,10 +16,10 @@ The lesson consists of these parts:
 Have students fill out a [review form](https://forms.office.com/r/vPuB3qPpxT). [View responses here](https://forms.office.com/Pages/DesignPage.aspx?fragment=FormId%3DiNuljKul90il4EzlCTX4B33juYEmlJlJpIkctSGCv9RUQUNBRVNCOElPSEdKUzg1RDFJNUxGMDBDRC4u%26Token%3D4c1cb9335ac7469b8ada1c0c4bcabb00).
 
 ### Lecture: Libraries & Input/Output
-Present the [Libraries & IO PowerPoint](LibrariesIO.pptx).
+Present the [Libraries & IO PowerPoint](LibrariesIO.pptx). The presentation includes some trivia, as well as a quiz activity.
 
 ### Code-Along: Divination
-Walk through the [code-along instructions](CodeAlongDivination.md) with the students to make some updates to a console-based astrology application.
+Walk through the [code-along instructions](CodeAlongDivination.md) with the students to make some updates to a console-based astrology application. The code-along
 
 ### Formative Assessment: Blooket
 Facilitate the [Blooket quiz game](https://dashboard.blooket.com/set/6525ab1d9e4a12863768122a).
@@ -28,8 +28,7 @@ Facilitate the [Blooket quiz game](https://dashboard.blooket.com/set/6525ab1d9e4
 
 | Activity | Time |
 |-|-|
-| Warm-up | 10m |
-| Lecture | 10m |
-| Code-Along | 15m |
-| Formative Assessment | 15m |
-| Survey | 5m |
+| Warm-up | 15m |
+| Lecture | 15m |
+| Code-Along | 25m |
+| Formative Assessment | 10m |

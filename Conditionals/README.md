@@ -19,11 +19,14 @@ Present the [Conditionals PowerPoint](Conditionals.pptx). There is also a mini q
 ### Code-Along: Chatbot
 Walk through the [code-along instructions](CodeAlongChatbot.md) with the students to build a simple chatbot that can respond to a few messages.
 
+### Survey
+Have the students complete the survey linked on the lesson homepage. View responses [here](https://hylandsw-my.sharepoint.com/:x:/g/personal/joseph_maxwell_hyland_com/EeUPn-X2ELhLiGPi7qu7XKEBgpqq8qr6KxG5tyqxxPuXKg?e=FNuRhH).
+
 ## Agenda
 
 | Activity | Time |
 |-|-|
 | Warm-up | 10m |
-| Lecture | 15m |
+| Lecture | 20m |
 | Code-Along | 30m |
 | Survey | 5m |
