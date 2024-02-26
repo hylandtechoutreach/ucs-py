@@ -7,7 +7,7 @@ You can run a command line shell right from Replit!
 First, you'll want to get the a command line up and running.
 
 1. [Click here to open the Starter Repl project.](https://replit.com/@HylandOutreach/ShellCommands)
-1. There, lick the "Fork Repl" button in the upper right
+1. There, click the "Fork Repl" button in the upper right
 1. A pop-up should appear: in the lower right, click the "Fork Repl" button
 1. In the new project, find the **Tools** section on the left
 1. There, click the **Shell** button:  

@@ -1,5 +1,5 @@
 - [Hyland Python Academy @ UCS](BOOKREADME.md)
-- [2/29: Hello, Python!](HelloPy/StudentDesc.md)
+- [🌟 2/29: Hello, Python!](HelloPy/StudentDesc.md)
 - [3/7: Command Line](CommandLine/StudentDesc.md)
   - [Warm-Up](CommandLine/WarmUpStory.md)
   - [Code-Along](CommandLine/CodeAlongStoryScript.md)

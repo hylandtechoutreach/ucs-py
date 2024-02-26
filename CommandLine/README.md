@@ -37,12 +37,13 @@ Follow the [instructions](CodeAlongStoryScript.md) to create a Python script tha
 ### Self-Paced Work: Terminus
 Instruct students to try the [Terminus game](http://www.mprat.org/Terminus/). The game reinforces basic command line concepts, and should increase their overall comfort level with the command line. This is strictly meant to be fun.
 
+Additionally, there is a little guide to learn [more commands](MoreCommands.md) - it can be beneficial to show some of the "fun useless" commands to give the students an idea of what's possible.
+
 ## Agenda
 
 | Activity | Time |
 |-|-|
 | Warm-up | 10m |
 | Lecture | 15m |
-| Code-Along | 20m
+| Code-Along | 20m |
 | Self-Paced Work | 20m |
-| Survey | 5m |
