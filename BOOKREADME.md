@@ -20,5 +20,8 @@ Material for each lesson is linked below.
 | **May 16** | [Final Project Presentations](FinalProjectPresentations/StudentDesc.md) |
 | **May 23** | [Discord Bot](DiscordBot/StudentDesc.md) (OPTIONAL) |
 
+## Pre-Break Feedback
+[Click here for the form.](https://forms.office.com/r/516My0vzxq)
+
 ## End-of-Trimester Survey/Assessment
 [Click here for the form.](TODO)
