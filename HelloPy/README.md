@@ -26,8 +26,7 @@ Facilitate the [Blooket quiz game](https://dashboard.blooket.com/set/64fa2ecd063
 
 | Activity | Time |
 |-|-|
-| Warm-Up | 15m |
+| Warm-Up | 20m |
 | Lecture | 15m |
-| Self-Paced Work | 15m |
+| Self-Paced Work | 20m |
 | Formative Assessment | 10m |
-| Survey | 5m |
