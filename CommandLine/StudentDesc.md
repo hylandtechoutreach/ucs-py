@@ -7,6 +7,9 @@ Learn how to hack with the command line.
 ## PowerPoint Presentation
 <iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://hylandtechoutreach.github.io/ucs-py/CommandLine/CommandLine.pptx' width='100%' height='450px' frameborder='0'></iframe>
 
+## Replit Shell Demo
+[Click here for a project that accesses the command line in Replit.](https://replit.com/@HylandOutreach/ShellCommands)
+
 ## Code-Along: Story Script
 [Click here for the activity instructions.](CodeAlongStoryScript.md)
 
