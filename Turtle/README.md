@@ -12,7 +12,7 @@ Students will be able to...
 The lesson consists of these parts:
 
 ### Warm-Up: Do Now
-Have students fill out a [review form](https://forms.office.com/r/zJik65TbLb).
+Have students fill out a [review form](https://forms.office.com/r/cHvwkbZDUL). [View Responses](https://hylandsw-my.sharepoint.com/:x:/g/personal/joseph_maxwell_hyland_com/Ee4xWqisL4FFn2NWI4siBKwBO_JnK8OH_oDmxkoih-eUgQ?e=06QBYK)
 
 ### Lecture: Turtle
 Present the [Turtle PowerPoint](Turtle.pptx).
@@ -32,6 +32,6 @@ Facilitate a [Baamboozle quiz game](https://www.baamboozle.com/game/1913848) cov
 |-|-|
 | Warm-up | 5m |
 | Lecture | 10m |
-| Code-Along | 30m |
+| Code-Along | 20m |
+| Challenges | 20m |
 | Formative Assessment | 10m |
-| Survey | 5m |

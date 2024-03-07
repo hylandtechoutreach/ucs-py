@@ -35,4 +35,4 @@ Students can follow [the instructions](ChallengesLoops.md) to modify their progr
 | Lecture | 10m |
 | Formative Assessment | 10m |
 | Code-Along | 20m |
-| Challenges | 15m |
+| Challenges | 20m |
