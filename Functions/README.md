@@ -39,7 +39,7 @@ The [Functions Worksheet](FunctionsWorksheet.docx) has a final **Exit Ticket** q
 | Activity | Time |
 |-|-|
 | Warm-up | 10m |
-| Lecture | 10m |
+| Lecture | 15m |
 | Worksheet | 10m |
-| Code-Along | 30m |
+| Code-Along | 20m |
 | Challenges | 10m |
