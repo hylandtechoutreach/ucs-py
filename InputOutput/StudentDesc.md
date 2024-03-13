@@ -12,3 +12,8 @@ This week is all about building interactivity into Python programs with librarie
 
 ## Resources
 [Click here to read more about the zodiac.](https://en.wikipedia.org/wiki/Western_astrology#The_zodiac)
+
+## BONUS: 🥧 Pi Day 🥧
+Or as I call it, **PY day**
+
+[Check out this activity to celebrate PyPi day!](https://tynker.me/code/project/5c79a9d804605876f367e8e9)
