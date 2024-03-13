@@ -7,8 +7,8 @@ Material for each lesson is linked below.
 | Date | Lesson |
 |-|-|
 | **February 29**| [Introduction](HelloPy/StudentDesc.md) |
-| 🌟 **March 7** | [Command Line](CommandLine/StudentDesc.md) |
-| **March 14** | [Input/Output](InputOutput/StudentDesc.md) |
+| **March 7** | [Command Line](CommandLine/StudentDesc.md) |
+| 🌟 **March 14** | [Input/Output](InputOutput/StudentDesc.md) |
 | **March 21** | [Conditionals](Conditionals/StudentDesc.md) |
 | **March 28** | 🌷 SPRING BREAK 🌷 |
 | **April 4** | [Turtle](Turtle/StudentDesc.md) |
