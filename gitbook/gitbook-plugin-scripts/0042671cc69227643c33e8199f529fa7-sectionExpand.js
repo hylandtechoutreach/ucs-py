@@ -49,6 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
           document.querySelectorAll(".section-content").forEach(d => d.style.maxHeight = d.scrollHeight + "px");
-        }, 25);
+        }, 1000);
     });
 });
