@@ -1,7 +1,7 @@
 # Turtle Graphics 🐢
 This lesson introduces [turtle graphics](https://docs.python.org/3/library/turtle.html) as a way to draw on screen with Python.
 
-## Do Now
+## Warm-Up: Do Now
 [Click here to fill out the form.](https://forms.office.com/r/cHvwkbZDUL)
 
 ## PowerPoint Presentation
