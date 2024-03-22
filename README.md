@@ -23,20 +23,18 @@ The course is comprised of these lessons:
 1. [Turtle](Turtle/README.md)
 1. [Loops](Loops/README.md)
 1. [Functions](Functions/README.md)
-1. [Variables](Variables/README.md)
-1. [Review](Review/README.md) (OPTIONAL)
+1. [Processing](Processing/README.md)
+1. [Classes](Classes/README.md)
+1. [Review](Review/README.md)
 1. [Final Project Work](FinalProjectWork/README.md)
 1. [Final Project Presentations](FinalProjectPresentations/README.md)
-1. [Discord Bot](DiscordBot/README.md) (OPTIONAL)
 
 ## Final Project Possibilities
 The students can start from one of the starting points, or start from scratch. They are welcome to work on whatever they would like, as long as they make everything their own. They will be encouraged to use their imaginations.
 
 ## Student Forms
-Student forms are available in a [Google Drive folder](TODO).
+Student forms are available through Microsoft Forms.
 
-- During the first session, students should complete the Intake Questionnaire form
-- After each subsequent session, students should complete the Student Weekly Check-in Form
 - Students should submit their final projects via the Final Projects Form
 - Students should complete the End-of-Trimester Survey/Assessment
 

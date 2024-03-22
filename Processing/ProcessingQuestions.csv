@@ -1,0 +1,34 @@
+Gimkit Spreadsheet Import Template,,,,
+Question,Correct Answer,Incorrect Answer 1,Incorrect Answer 2 (Optional),Incorrect Answer 3 (Optional)
+Which function should be defined to set up the Processing canvas?,setup,ellipse,run,rect
+Which function should be defined to determine what happens with each new frame?,draw,update,new,run
+Which function should be called to draw a square?,rect,rectangle,square,setup
+Which function should be called to draw a circle?,ellipse,circle,rect,draw
+Should the ellipse function be called or defined?,called,defined,,
+Should the rect function be called or defined?,called,defined,,
+Should the setup function be called or defined?,defined,called,,
+Should the draw function be called or defined?,defined,called,,
+What is the first thing passed to the rect function?,corner x coordinate,corner y coordinate,width,height
+What is the second thing passed to the rect function?,corner y coordinate,corner x coordinate,width,height
+What is the third thing passed to the rect function?,width,center x coordinate,corner y coordinate,height
+What is the fourth thing passed to the rect function?,height,center x coordinate,width,center y coordinate
+What is the first thing passed to the ellipse function?,center x coordinate,corner y coordinate,width,height
+What is the second thing passed to the ellipse function?,center y coordinate,center x coordinate,width,height
+What is the third thing passed to the ellipse function?,width,corner x coordinate, center y coordinate,height
+What is the fourth thing passed to the ellipse function?,height,center x coordinate,width,center y coordinate
+Increasing the value of a y coordinate will move a point...,down,up,left,right
+Decreasing the value of a y coordinate will move a point...,up,down,left,right
+Increasing the value of an x coordinate will move a point...,right,up,left,down
+Decreasing the value of an x coordinate will move a point...,left,down,up,right
+What is the first thing passed to the size function?,canvas width,canvas height,canvas position,square size
+What is the second thing passed to the size function?,canvas height,canvas width,ellipse position,dimensions
+Which library should be imported before running a processing project?,processing,star,python,math
+Which keyword is needed to define a function?,def,function,if,import
+Which keyword is needed to import a library?,import,def,function,if
+Which symbols go after a function name when calling it?,parentheses (),quotes "",colons ::,curly brackets {}
+Which function changes the color of the inside of a shape?,fill,stroke,background,rect
+Which function takes a color and draws the background?,background,draw,fill,rect
+Which number passed represents Red when setting a color?,first,second,third,fourth
+Which number passed represents Green when setting a color?,second,first,third,fourth
+Which number passed represents Blue when setting a color?,third,first,second,fourth
+Which number passed represents transparency when setting a color?,fourth,first,second,third
