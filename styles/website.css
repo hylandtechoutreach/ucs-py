@@ -232,3 +232,14 @@ div.contracted > h2 > span.expand-button {
 .body-inner {
     scrollbar-gutter: stable;
 }
+
+input {
+    padding: 10px;
+    background: black;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid lime;
+    background: #00009f;
+}
