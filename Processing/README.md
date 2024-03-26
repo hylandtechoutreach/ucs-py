@@ -52,27 +52,3 @@ There are a couple of review games for the students to play toward the end of th
 | Code-Along | 10m |
 | Challenges | 10m |
 | Review Games | 10m |
-
-
-
-
-
-
-
-
-
-
-
-first program
-
-```py
-from processing import *
-
-def setup():
-  size(400, 200)
-
-def draw():
-  ellipse(200, 100, 50, 50)
-
-run()
-```
