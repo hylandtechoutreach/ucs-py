@@ -243,3 +243,12 @@ button {
     border: 1px solid lime;
     background: #00009f;
 }
+
+tr:nth-child(6) td {
+    background: blue;
+}
+
+.book-summary ul.summary li:nth-child(6) {
+    font-weight: bold;
+    font-size: 1.1em;
+}
