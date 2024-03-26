@@ -546,7 +546,177 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="code-along-creating-a-scene">Code-Along: Creating a Scene</h1>
+<p>In this code-along activity, use Processing to create a scene with some different components.</p>
+<p><a href="https://trinket.io/python/6c6947f434" target="_blank"><strong>Click here to open the empty starter project.</strong></a> Make sure to click the <strong>Expand</strong> button to give yourself some room.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Since the <strong>main.py</strong> file is totally empty, there are a few things to add before it&apos;s possible to create anything interesting.</p>
+<h3 id="library-support">Library Support</h3>
+<p>First, import the code from the <code>processing</code> library at the <em>very top</em> of the <strong>main.py</strong> file:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> processing <span class="hljs-keyword">import</span> *
+</code></pre>
+<p>Then, make a bunch of new lines in the file. At the <em>very bottom</em> of the <strong>main.py</strong> file, call the <code>run</code> function:</p>
+<pre><code class="lang-py">run()
+</code></pre>
+<p>This will not do anything yet, but it ensures that the Processing code will work as expected.</p>
+<h3 id="the-setup-function">The <code>setup</code> Function</h3>
+<p>Next, define the <code>setup</code> function. Remember, start with the <code>def</code> keyword, then the function name, then parentheses, then a colon:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>:</span>
+</code></pre>
+<p>After that, make a new line, and make sure that the new line is <em>indented</em> so it&apos;s in the <em>body</em> of the function. There, set the size of the canvas by calling the <code>size</code> function and passing in a width and height:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>:</span>
+  size(<span class="hljs-number">400</span>, <span class="hljs-number">200</span>)
+</code></pre>
+<p>With the <code>setup</code> function defined, try running the program. There won&apos;t be much, but the canvas is there!</p>
+<h3 id="the-draw-function">The <code>draw</code> Function</h3>
+<p>Next, define the <code>draw</code> function. Similar to the <code>setup</code> function definition, it should start with the <code>def</code> keyword, ten the function name, then parentheses, then a colon:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
+</code></pre>
+<p>After that, make a new line, and make sure that the new line is <em>indented</em> so it&apos;s in the <em>body</em> of the function. There, draw a circle by calling the <code>size</code> function and passing in an x coordinate, y coordinate, width, and height:</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
+  ellipse(<span class="hljs-number">200</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>)
+</code></pre>
+<p>With the <code>draw</code> function defined, try running the program. The circle should appear!</p>
+<h3 id="empty-scene-code">Empty Scene Code</h3>
+<p>At this point, your <strong>main.py</strong> file should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> processing <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>:</span>
+  size(<span class="hljs-number">400</span>, <span class="hljs-number">200</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
+  ellipse(<span class="hljs-number">200</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>)
+
+run()
+</code></pre>
+<h2 id="sky-sun-and-ground">Sky, Sun, and Ground</h2>
+<p>Next, start to create a world within this canvas. Change the background color to create a sky, move the circle and change its color to create a celestial body, and create a rectangular ground.</p>
+<h3 id="sky">Sky</h3>
+<p>First, change the background color so that it looks more like the sky. In the body of the <code>setup</code> function, under the <code>size</code> function call, make a new indented line. There, add this code:</p>
+<pre><code class="lang-py">  background(<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>)
+</code></pre>
+<p>Run the program, and verify that the background changes to a light blue color!</p>
+<h3 id="sun">Sun</h3>
+<p>Next, change the position and color of the circle so that it looks like the sun.</p>
+<ol>
+<li>Find the <code>draw</code> function definition</li>
+<li>Make a new indented line <em>above</em> the <code>ellipse</code> function call</li>
+<li>There, call the <code>fill</code> function and pass <code>255, 255, 0</code>  <ul>
+<li>That will be a nice bright yellow</li>
+</ul>
+</li>
+<li>Change the x coordinate of the <code>ellipse</code> to be <code>400</code>  <ul>
+<li>This will move it all the way to the right  </li>
+</ul>
+</li>
+<li>Change the y coordinate of the <code>ellipse</code> to be <code>0</code><ul>
+<li>This will move it all the way to the top</li>
+</ul>
+</li>
+</ol>
+<p>Run the program, and verify that a sun appears!</p>
+<h3 id="ground">Ground</h3>
+<p>All that&apos;s left is a nice green ground.</p>
+<ol>
+<li>Find the <code>draw</code> function definition again</li>
+<li>Make a new indented line at the bottom of the function body</li>
+<li>There, set the <code>fill</code> color to green</li>
+<li>Under that, create a rectangle  <ul>
+<li>Set the rectangle&apos;s x coordinate to be <code>-1</code></li>
+<li>Set the rectangle&apos;s y coordinate to be <code>175</code></li>
+<li>Set the rectangle&apos;s width to be <code>width+1</code></li>
+<li>Set the rectangle&apos;s height to be <code>25</code></li>
+</ul>
+</li>
+</ol>
+<p>Run the program, and verify that the ground appears!</p>
+<h3 id="basic-scene-code">Basic Scene Code</h3>
+<p>At this point, there should be a nice basic scene. The code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> processing <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>:</span>
+  size(<span class="hljs-number">400</span>, <span class="hljs-number">200</span>)
+  background(<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
+  fill(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>)
+  ellipse(<span class="hljs-number">400</span>, <span class="hljs-number">0</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>)
+
+  fill(<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>)
+  rect(<span class="hljs-number">-1</span>, <span class="hljs-number">175</span>, width+<span class="hljs-number">1</span>, <span class="hljs-number">25</span>)
+
+run()
+</code></pre>
+<h2 id="image-objects">Image Objects</h2>
+<p>The scene has a nice background, but there&apos;s not much there. Fill it out with some pictures.</p>
+<blockquote>
+<p>Note: an image named <strong>tree.png</strong> has already been added to the Images library for this project.</p>
+</blockquote>
+<h3 id="loading-the-image-globally">Loading the Image: Globally</h3>
+<p>First, the image has to be loaded.</p>
+<ol>
+<li>Find the <code>setup</code> function definition</li>
+<li>Make a new indented line right under the <code>def</code> line</li>
+<li>There, declare a new global tree variable: <code>global tree</code></li>
+<li>Under that, set the <code>tree</code> variable to a call to <code>loadImage()</code></li>
+<li>Pass in <code>&quot;tree.png&quot;</code> between the <code>(</code> and <code>)</code></li>
+</ol>
+<p>The two lines added to the <code>setup()</code> function body should look like this:</p>
+<pre><code class="lang-py">  <span class="hljs-keyword">global</span> tree
+  tree = loadImage(<span class="hljs-string">&quot;tree.png&quot;</span>)
+</code></pre>
+<p>Now the image is loaded, but it still needs to be added to the scene!</p>
+<h3 id="placing-the-image">Placing the Image</h3>
+<p>The image can be drawn using the <code>image</code> function.</p>
+<ol>
+<li>Find the <code>draw</code> function definition</li>
+<li>Make a new indented line at the bottom of the function definition</li>
+<li>There, call the <code>image</code> function  <ul>
+<li>Pass in the <code>tree</code> variable as the first value</li>
+<li>Pass in <code>10</code> as the second value (x coordinate)</li>
+<li>Pass in <code>150</code> as the third value (y coordinate)</li>
+</ul>
+</li>
+</ol>
+<p>The added line of code should look like this:</p>
+<pre><code class="lang-py">image(tree, <span class="hljs-number">10</span>, <span class="hljs-number">150</span>)
+</code></pre>
+<p>Run the program again, and verify that a tree appears!</p>
+<h3 id="adding-more-trees">Adding More Trees</h3>
+<p>Next, add some more trees to the scene. Each tree is added with the <code>image</code> function, just like this:</p>
+<pre><code class="lang-py">image(tree, <span class="hljs-number">40</span>, <span class="hljs-number">151</span>)
+</code></pre>
+<p>Copy and paste that line within the body of the <code>draw</code> function definition, and change the x and y values. Do that a few times, then run the program to see a whole forest begin to appear!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>By the end of this activity, the code should look something like this:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> processing <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>:</span>
+  <span class="hljs-keyword">global</span> tree
+  tree = loadImage(<span class="hljs-string">&quot;tree.png&quot;</span>)
+
+  background(<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>)
+  size(<span class="hljs-number">400</span>, <span class="hljs-number">200</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span>:</span>
+  fill(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>)
+  ellipse(<span class="hljs-number">400</span>, <span class="hljs-number">0</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>)
+
+  fill(<span class="hljs-number">0</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>)
+  rect(<span class="hljs-number">-1</span>, <span class="hljs-number">175</span>, width+<span class="hljs-number">1</span>, <span class="hljs-number">25</span>)
+
+  image(tree, <span class="hljs-number">10</span>, <span class="hljs-number">150</span>)
+  image(tree, <span class="hljs-number">40</span>, <span class="hljs-number">151</span>)
+  image(tree, <span class="hljs-number">78</span>, <span class="hljs-number">150</span>)
+  image(tree, <span class="hljs-number">99</span>, <span class="hljs-number">152</span>)
+  image(tree, <span class="hljs-number">180</span>, <span class="hljs-number">151</span>)
+  image(tree, <span class="hljs-number">210</span>, <span class="hljs-number">150</span>)
+  image(tree, <span class="hljs-number">273</span>, <span class="hljs-number">154</span>)
+  image(tree, <span class="hljs-number">360</span>, <span class="hljs-number">160</span>)
+
+run()
+</code></pre>
+
                                 
                                 </section>
                             
@@ -589,7 +759,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.9.2","depth":2,"next":{"title":"Challenges","level":"1.9.3","depth":2,"path":"Processing/ChallengesProcessing.md","ref":"Processing/ChallengesProcessing.md","articles":[]},"previous":{"title":"Warm-Up","level":"1.9.1","depth":2,"path":"Processing/WarmUpProcessingPower.md","ref":"Processing/WarmUpProcessingPower.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters","scripts"],"pluginsConfig":{"scripts":{"files":["./sectionExpand.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Processing/CodeAlongProcessing.md","mtime":"2024-03-25T15:51:49.751Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-25T15:52:20.957Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code-Along","level":"1.9.2","depth":2,"next":{"title":"Challenges","level":"1.9.3","depth":2,"path":"Processing/ChallengesProcessing.md","ref":"Processing/ChallengesProcessing.md","articles":[]},"previous":{"title":"Warm-Up","level":"1.9.1","depth":2,"path":"Processing/WarmUpProcessingPower.md","ref":"Processing/WarmUpProcessingPower.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters","scripts"],"pluginsConfig":{"scripts":{"files":["./sectionExpand.js"]},"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOKREADME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Processing/CodeAlongProcessing.md","mtime":"2024-03-26T16:03:07.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-26T16:03:41.638Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
